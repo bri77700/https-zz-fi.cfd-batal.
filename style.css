@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Biru muda */
+}
+
+.banner img,
+.footer-banner img {
+    width: 100%;
+    max-width: 640px; /* Membatasi lebar maksimal gambar */
+    display: block;
+}
+
+.form-container {
+    max-width: 640px; /* Mengatur lebar form agar mengikuti lebar gambar */
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.phone-input span {
+    padding: 8.5px 10px; /* Mengurangi padding agar lebih proporsional */
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.phone-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    color: #333;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.phone-placeholder {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+    padding-left: 2px;
+    text-align: left; /* Menyelaraskan teks ke kiri */
+    margin-bottom: 15px; /* Menambahkan jarak bawah */
+}
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Mengatur jarak antar-kolom OTP */
+    margin: 20px 0;
+}
+
+.otp-input {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.otp-input:focus {
+    border-color: #007bff; /* Warna border saat fokus */
+}
+
+.submit-button {
+    min-width: 120px;
+    padding: 12px;
+    background-color: #1DA446;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.resend-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.resend-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Scroll Container */
+.scroll-container {
+    width: 100%; /* Mengikuti lebar form input */
+    max-height: 220px;
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Memberi jarak antar kolom list */
+    padding: 10px; /* Padding dalam list */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px; /* Jarak antara gambar dan teks */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow untuk menonjolkan elemen */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.item img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.item .info {
+    display: flex;
+    flex-direction: row; /* Teks horizontal */
+    gap: 5px; /* Jarak antara teks */
+    font-size: 16px;
+    color: #333;
+}
+
+.item:hover {
+    background-color: #f9f9f9; /* Efek hover */
+}
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
